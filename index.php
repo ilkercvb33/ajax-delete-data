@@ -37,7 +37,10 @@ require 'mysql.php';
       <td>'. $cek['isim'] .'</td>
       <td>'. $cek['soyisim'] .'</td>
 	  	<td>'. $cek['yas'] .'</td>
+		
+			 // ÇEKRİEİLMESİ ZORUNLU ALAN
 	  	<td silid="'. $cek['id'] .'" class="btn btn-danger sil">Sil</td>
+			// ÇEKRİEİLMESİ ZORUNLU ALAN
     	</tr>
     	';
 	}
@@ -53,7 +56,8 @@ require 'mysql.php';
 
 
 
-
+	// ÇEKRİEİLMESİ ZORUNLU ALAN
+	
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -64,8 +68,8 @@ require 'mysql.php';
 <script>
 	$(document).ready(function (){
 		$(".sil").click(function (){
-			var silinecekid = $(this).attr('silid');
-			var silinecektablo = $(this).parents('tr');
+			var silinecekid = $(this).attr('silid'); 
+			var silinecektablo = $(this).parents('tr'); // silme işlemi başarılı dönerse tr satırını gözünüzün önünde siler ve sayfayı yeniden başlatmaz
 			$.post("delete.php",{"id":silinecekid},function (gelencevap){
 				if(gelencevap=="sildim"){
 					silinecektablo.hide(400);
@@ -76,6 +80,7 @@ require 'mysql.php';
 		})
 	})
 </script>
+	// ÇEKRİEİLMESİ ZORUNLU ALAN
 
 </body>
 </html>
