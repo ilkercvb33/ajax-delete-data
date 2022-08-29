@@ -21,4 +21,4 @@ yapıştırıyoruz
 
 ÇEKTİRİLMESİ ZORUNLU ALANLAR İNDEX.PHP DE BELİRTİLMİŞTİR. DİĞER SAYFALARI DA DOSYAMIZA KURUYORUZ.
 
-* This codes and repostories created by www.ilkertuncer.com
+* This codes and repository created by www.ilkertuncer.com
